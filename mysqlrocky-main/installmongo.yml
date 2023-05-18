@@ -1,0 +1,10 @@
+---
+- name: Install Database
+  hosts: localhost
+  gather_facts: true
+  tasks:
+    - include_role:
+        name: mongodb
+        tasks_from: main.yml
+
+
